@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "ddproc"
+description = "Python library for processing data donation data"
+authors = [
+    {name = "Max Paulus"}
+]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+#license = {text = "MIT"}
+dependencies = [
+    "pandas",
+    "azure-core",
+    "azure-identity",
+    "azure-storage-blob"
+]
+dynamic = ["version"]
+requires-python = ">=3.8"
+
+[tool.setuptools]
+packages = ["ddproc"]
