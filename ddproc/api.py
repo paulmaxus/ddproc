@@ -97,6 +97,7 @@ class Processor:
                     new_id = str(r.loc[m["id"], "replaces"])
                     new_m = m.copy()
                     new_m["id"] = new_id
+                    new_metadata.append(new_m)
                     print("replacing", 
                           new_id[0] + "*"*len(new_id[1:-1]) + new_id[-1],
                           "with", 
